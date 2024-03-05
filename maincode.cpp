@@ -19,7 +19,7 @@ if(normalIndexCount) {
     if(cache.size().z() != 1) {
         Error{} << "Text::MagnumFontConverter::exportFontToData(): exporting array glyph caches is not supported";
         return {};
-    }
+    }//hello
     if(cache.features() & GlyphCacheFeature::ImageProcessing && !(cache.features() >= GlyphCacheFeature::ProcessedImageDownload)) {
         Error{} << "Text::MagnumFontConverter::exportFontToData(): glyph cache has image processing but doesn't support image download";
         return {};
