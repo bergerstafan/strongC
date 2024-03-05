@@ -1,7 +1,7 @@
  if(normalIndexCount && normalIndexCount != indices.size()) {
         CORRADE_INTERNAL_ASSERT(normalIndexCount < indices.size());
         Error() << "Trade::ObjImporter::mesh(): some normal indices are missing";
-        return Containers::NullOpt;
+        return Containers::NullOpt;//nice
     }
     if(textureCoordinateIndexCount && textureCoordinateIndexCount != indices.size()) {
         CORRADE_INTERNAL_ASSERT(textureCoordinateIndexCount < indices.size());
